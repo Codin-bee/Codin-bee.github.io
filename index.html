@@ -3,86 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Name - Portfolio">
+    <meta name="description" content="Coding Bee - Portfolio">
     <title>Coding Bee | Portfolio</title>
-    <style>
-        body {
-            background-color: rgb(35, 35, 35);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            font-family: sans-serif;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        h1 {
-            font-size: 90px;
-            margin: 0;
-        }
-        h2 {
-            font-size: 50px;
-            margin: 20px 0 10px;
-        }
-        h3 {
-            font-size: 40px;
-            margin: 10px 0;
-        }
-        p.introduction {
-            font-size: 20px;
-            margin: 0 250px;
-            text-align: center;
-        }
-        p.SNN4J-description {
-            padding: 10px 20px;
-            font-size: 20px;
-            margin: 0 250px;
-            text-align: center;
-        }
-        a.SNN4J-btn {
-            background-color: rgb(66, 66, 66);
-            color: white;
-            border: 1px outset buttonborder;
-            border-radius: 3px;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        a.SNN4J-btn:hover {
-            color: black;
-            background-color: white;
-            animation: bubble 0.5s ease-out forwards;
-        }
-        @keyframes bubble {
-            0% { transform: scale(1); }
-            33% { transform: scale(1.15); }
-            66% { transform: scale(1.3); }
-            100% { transform: scale(1.2); }
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -95,7 +19,6 @@
             </ul>
         </nav>
     </header>
-
     <section id="about">
         <p class="introduction">
             Hi, I’m Coding Bee, a back-end developer with over two years of experience. 
@@ -108,14 +31,28 @@
     <section id="projects">
         <h2>Projects</h2>
         <h3>SNN4J</h3>
-        <p class="SNN4J-description">
+        <p class="project-description">
             Simple Neuron Networks for Java (SNN4J) is my machine learning library developed from scratch.
             It allows users to create, train, and utilize multi-layer perceptrons (fully connected feedforward networks) with just
             a few lines of code. The primary goal is to serve as a learning resource for those new to AI, so it isn’t highly optimized;
             instead, the code is designed to reflect how this topic is typically explained in textbooks,
             helping users grasp the concepts more easily.
         </p>
-        <a href="https://github.com/Codin-bee/SimpleNeuronNetworks4J" class="SNN4J-btn">Check out SNN4J</a>
+        <a href="https://github.com/Codin-bee/SimpleNeuronNetworks4J" class="project-btn">Check out SNN4J</a>
+
+        <h3>Digit Recognizer</h3>
+        <p class="project-description">
+            Simple project for digit recognition showcasing the ability of my SNN4J library.
+            Using a small MLP from the library, only a small part of the MNIST database, and 100 or so iterations,
+            it managed to get 75% accuracy on a testing dataset with 20 thousand examples.
+        </p>
+        <a href="https://github.com/Codin-bee/DigitRecognition" class="project-btn">Check out Digit Recognition</a>
+
+        <h3>Note Transformer</h3>
+        <p class="project-description">
+            Implementing a modified Transformer architecture for generating classical music from scratch.
+        </p>
+        <a href="https://github.com/Codin-bee/NoteTransformer" class="project-btn">Check out Note Transformer</a>
     </section>
 
     <section id="contact">
@@ -123,10 +60,13 @@
         <form>
             <label for="name">Name:</label>
             <input type="text" id="name" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" required>
+            
             <label for="message">Message:</label>
             <textarea id="message" required></textarea>
+            
             <button type="submit">Send</button>
         </form>
     </section>
