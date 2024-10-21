@@ -1,6 +1,12 @@
+:root {
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+}
+
 body {
-    background-color: rgb(35, 35, 35);
-    color: white;
+    background-color: var(--main_color);
+    color: var(--text_color);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -36,8 +42,8 @@ p.introduction, p.project-description {
 }
 
 a.project-btn {
-    background-color: rgb(66, 66, 66);
-    color: white;
+    background-color: var(--secondary_color);
+    color: var(--text_color);
     border: 1px outset buttonborder;
     border-radius: 3px;
     padding: 10px 20px;
@@ -46,14 +52,19 @@ a.project-btn {
     margin-top: 20px;
 }
 a.project-btn:hover {
-    color: black;
-    background-color: white;
+    color: var(--secondary_color);
+    background-color: var(--text_color);
     animation: bubble 0.5s ease-out forwards;
 }
 
 li.contact {
     font-size: 20px;
     margin: 0 250px;
+}
+
+a.navigation {
+    color: var(--text_color);
+
 }
 
 #contacts{
@@ -79,7 +90,6 @@ nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
-    color: white;
     text-decoration: none;
 }
 nav ul li a:hover {
