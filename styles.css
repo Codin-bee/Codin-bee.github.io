@@ -2,6 +2,7 @@
     --main_color: rgb(35, 35, 35);
     --secondary_color: rgb(66, 66, 66);
     --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
 }
 
 body {
@@ -45,7 +46,7 @@ a.project-btn {
     background-color: var(--secondary_color);
     color: var(--text_color);
     border: 1px outset buttonborder;
-    border-radius: 3px;
+    border-radius: 8px;
     padding: 10px 20px;
     text-decoration: none;
     display: inline-block;
@@ -63,8 +64,16 @@ li.contact {
 }
 
 a.navigation {
-    color: var(--text_color);
+    color: var(--navigation_color);
+}
 
+#theme-select {
+    background-color: var(--main_color);
+    color: var(--navigation_color);
+}
+
+#theme-select-label {
+    color: var(--navigation_color);
 }
 
 #contacts{
@@ -151,4 +160,37 @@ body .active {
     a.project-btn {
         padding: 8px 16px;
     }
+}
+
+/*Theme switching*/
+.theme-switcher {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.dark-theme{
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+.light-theme {
+    --main_color: rgb(255 255 255);
+    --secondary_color: rgb(218, 218, 218);
+    --text_color: rgb(0, 0, 0);
+    --navigation_color: rgb(66, 66, 66);
+}
+.barbie-theme {
+    --main_color: rgb(255 255 255);
+    --secondary_color: rgb(255, 255, 255);
+    --text_color: rgb(255, 106, 196);
+    --navigation_color: rgb(179 25 116);
+}
+
+.blue-theme {
+    --main_color: rgb(0, 134, 155);
+    --secondary_color: rgb(0, 146, 168);
+    --text_color: rgb(154, 236, 255);
+    --navigation_color: rgb(0, 75, 105);
 }
