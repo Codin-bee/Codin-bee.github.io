@@ -12,7 +12,8 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -55,6 +56,10 @@ li.contact {
     margin: 0 250px;
 }
 
+#contacts{
+    margin-bottom: 100px;
+}
+
 @keyframes bubble {
     0% { transform: scale(1); }
     33% { transform: scale(1.15); }
@@ -79,6 +84,17 @@ nav ul li a {
 }
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+body * {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body .active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 1200px) {
@@ -126,15 +142,3 @@ nav ul li a:hover {
         padding: 8px 16px;
     }
 }
-
-body * {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-body .active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
