@@ -30,3 +30,13 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.add(`${savedTheme}-theme`);
     }
 });
+
+document.querySelectorAll('.certificate-title').forEach(button => {
+    button.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        content.classList.toggle('expanded');
+        if (content.classList.contains('expanded')) {
+            content.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});

@@ -29,10 +29,14 @@ h1 {
 }
 h2 {
     font-size: 50px;
-    margin: 20px 0 10px;
+    margin: 60px 0 60px;
 }
 h3 {
     font-size: 40px;
+    margin: 10px 0;
+}
+h4 {
+    font-size: 30px;
     margin: 10px 0;
 }
 
@@ -162,12 +166,40 @@ body .active {
     }
 }
 
+/* Certificates */
+.certificate-title {
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px;
+}
+.certificate-title:hover {
+    background-color: var(--text_color);
+    color: var(--secondary_color);
+}
+.certificate-description {
+    padding: 0 15px;
+    display: none;
+    background-color: var(--main_color);
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.certificate-description.expanded {
+    display: block;
+}
+
 /*Theme switching*/
 .theme-switcher {
     display: inline-block;
     margin-left: 20px;
 }
-
 .dark-theme{
     --main_color: rgb(35, 35, 35);
     --secondary_color: rgb(66, 66, 66);
