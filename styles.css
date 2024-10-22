@@ -27,14 +27,17 @@ h1 {
     font-size: 90px;
     margin: 0;
 }
+
 h2 {
-    font-size: 50px;
+    font-size: 62px;
     margin: 60px 0 60px;
 }
+
 h3 {
     font-size: 40px;
     margin: 10px 0;
 }
+
 h4 {
     font-size: 30px;
     margin: 10px 0;
@@ -44,10 +47,17 @@ p.introduction, p.project-description {
     font-size: 20px;
     margin: 0 250px;
 }
+
 p.skill-description {
     font-size: 20px;
-    /*margin: 0 250px;*/
+    margin: 0 250px;
 }
+
+p.hobby-description {
+    font-size: 20px;
+    margin: 0 250px;
+}
+
 a.project-btn {
     background-color: var(--secondary_color);
     color: var(--text_color);
@@ -58,6 +68,7 @@ a.project-btn {
     display: inline-block;
     margin-top: 20px;
 }
+
 a.project-btn:hover {
     color: var(--secondary_color);
     background-color: var(--text_color);
@@ -96,17 +107,21 @@ a.navigation {
 nav {
     margin: 20px 0;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
 }
+
 nav ul li a:hover {
     text-decoration: underline;
 }
