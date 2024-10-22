@@ -174,7 +174,6 @@ body .active {
     --text_color: rgb(255, 255, 255);
     --navigation_color: rgb(66, 66, 66);
 }
-
 .light-theme {
     --main_color: rgb(255 255 255);
     --secondary_color: rgb(218, 218, 218);
@@ -187,10 +186,15 @@ body .active {
     --text_color: rgb(255, 106, 196);
     --navigation_color: rgb(179 25 116);
 }
-
 .blue-theme {
     --main_color: rgb(0, 134, 155);
     --secondary_color: rgb(0, 146, 168);
     --text_color: rgb(154, 236, 255);
     --navigation_color: rgb(0, 75, 105);
+}
+.green-theme {
+    --main_color: rgb(12, 144, 0);
+    --secondary_color: rgb(32, 106, 0);
+    --text_color: rgb(54, 44, 0);
+    --navigation_color: rgb(132, 255, 0);
 }

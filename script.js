@@ -17,7 +17,7 @@
     
     const themeSelect = document.getElementById('theme-select');
     themeSelect.addEventListener('change', function() {
-    document.body.classList.remove('dark-theme', 'light-theme', 'barbie-theme', 'blue-theme');
+    document.body.classList.remove('dark-theme', 'light-theme', 'barbie-theme', 'blue-theme', 'green-theme');
     document.body.classList.add(this.value + '-theme');
     localStorage.setItem('theme', this.value);
 });
@@ -29,8 +29,4 @@ window.addEventListener('DOMContentLoaded', () => {
         themeSelect.value = savedTheme;
         document.body.classList.add(`${savedTheme}-theme`);
     }
-//    setTimeout(() => {
-//        window.scrollTo(0, 0);
-//        revealOnScroll();
-//    }, 100);
 });
