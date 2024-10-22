@@ -43,16 +43,9 @@ h4 {
     margin: 10px 0;
 }
 
-p.introduction, p.project-description {
+p {
     font-size: 20px;
-}
-
-p.skill-description {
-    font-size: 20px;
-}
-
-p.hobby-description {
-    font-size: 20px;
+    margin: 0 250px;
 }
 
 a.project-btn {
@@ -90,7 +83,7 @@ a.navigation {
     color: var(--navigation_color);
 }
 
-#contacts{
+#contacts {
     margin-bottom: 100px;
 }
 
@@ -134,7 +127,7 @@ body .active {
     transform: translateY(0);
 }
 
-/* UI Responsibility */
+/* UI Responsiveness */
 @media (max-width: 1200px) {
     p {
         margin: 0 100px;
@@ -213,23 +206,23 @@ body .active {
     display: inline-block;
     margin-left: 20px;
 }
-.dark-theme{
+.dark-theme {
     --main_color: rgb(35, 35, 35);
     --secondary_color: rgb(66, 66, 66);
     --text_color: rgb(255, 255, 255);
     --navigation_color: rgb(66, 66, 66);
 }
 .light-theme {
-    --main_color: rgb(255 255 255);
+    --main_color: rgb(255, 255, 255);
     --secondary_color: rgb(218, 218, 218);
     --text_color: rgb(0, 0, 0);
     --navigation_color: rgb(66, 66, 66);
 }
 .barbie-theme {
-    --main_color: rgb(255 255 255);
+    --main_color: rgb(255, 255, 255);
     --secondary_color: rgb(255, 255, 255);
     --text_color: rgb(255, 106, 196);
-    --navigation_color: rgb(179 25 116);
+    --navigation_color: rgb(179, 25, 116);
 }
 .blue-theme {
     --main_color: rgb(0, 134, 155);
