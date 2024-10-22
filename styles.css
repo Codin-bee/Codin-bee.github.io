@@ -139,13 +139,13 @@ body .active {
 
 /* UI Responsibility */
 @media (max-width: 1200px) {
-    p.introduction, p.project-description {
+    p {
         margin: 0 100px;
     }
 }
 
 @media (max-width: 768px) {
-    p.introduction, p.project-description {
+    p {
         margin: 0 50px;
     }
 
@@ -163,7 +163,7 @@ body .active {
 }
 
 @media (max-width: 480px) {
-    p.introduction, p.project-description {
+    p {
         margin: 0 20px;
     }
 
