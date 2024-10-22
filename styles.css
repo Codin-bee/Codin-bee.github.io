@@ -45,17 +45,14 @@ h4 {
 
 p.introduction, p.project-description {
     font-size: 20px;
-    margin: 0 250px;
 }
 
 p.skill-description {
     font-size: 20px;
-    margin: 0 250px;
 }
 
 p.hobby-description {
     font-size: 20px;
-    margin: 0 250px;
 }
 
 a.project-btn {
@@ -143,7 +140,6 @@ body .active {
         margin: 0 100px;
     }
 }
-
 @media (max-width: 768px) {
     p {
         margin: 0 50px;
@@ -161,7 +157,6 @@ body .active {
         font-size: 30px;
     }
 }
-
 @media (max-width: 480px) {
     p {
         margin: 0 20px;
