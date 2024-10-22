@@ -43,9 +43,11 @@ h4 {
 p.introduction, p.project-description {
     font-size: 20px;
     margin: 0 250px;
-    text-align: center;
 }
-
+p.skill-description {
+    font-size: 20px;
+    /*margin: 0 250px;*/
+}
 a.project-btn {
     background-color: var(--secondary_color);
     color: var(--text_color);
@@ -120,6 +122,7 @@ body .active {
     transform: translateY(0);
 }
 
+/* UI Responsibility */
 @media (max-width: 1200px) {
     p.introduction, p.project-description {
         margin: 0 100px;
@@ -195,7 +198,7 @@ body .active {
     display: block;
 }
 
-/*Theme switching*/
+/* Theme switching */
 .theme-switcher {
     display: inline-block;
     margin-left: 20px;
