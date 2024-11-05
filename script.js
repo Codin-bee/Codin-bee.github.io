@@ -17,7 +17,7 @@
     
     const themeSelect = document.getElementById('theme-select');
     themeSelect.addEventListener('change', function() {
-    document.body.classList.remove('dark-theme', 'light-theme', 'barbie-theme', 'blue-theme', 'green-theme');
+    document.body.classList.remove('dark-theme', 'light-theme', 'barbie-theme', 'blue-theme', 'green-theme', 'purple-theme');
     document.body.classList.add(this.value + '-theme');
     localStorage.setItem('theme', this.value);
 });

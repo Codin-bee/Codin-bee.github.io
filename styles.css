@@ -230,9 +230,15 @@ body .active {
     --text_color: rgb(154, 236, 255);
     --navigation_color: rgb(0, 75, 105);
 }
+.purple-theme {
+    --main_color: rgb(185 157 251);
+    --secondary_color: rgb(168 131 242);
+    --text_color: rgb(65 54 151);
+    --navigation_color: rgb(102 70 152);
+}
 .green-theme {
-    --main_color: rgb(12, 144, 0);
-    --secondary_color: rgb(32, 106, 0);
-    --text_color: rgb(54, 44, 0);
-    --navigation_color: rgb(132, 255, 0);
+    --main_color: rgb(100 140 33 / 87%);
+    --secondary_color: rgb(34 114 16 / 31%);
+    --text_color: rgb(20 75 22);
+    --navigation_color: rgb(57 99 12 / 79%);
 }
