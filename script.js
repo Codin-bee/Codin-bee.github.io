@@ -14,6 +14,7 @@
     }
     window.addEventListener('scroll', revealOnScroll);
     window.addEventListener('load', revealOnScroll);
+    window.addEventListener('click', revealOnScroll);
     
     const themeSelect = document.getElementById('theme-select');
     themeSelect.addEventListener('change', function() {
