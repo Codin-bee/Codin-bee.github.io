@@ -4,7 +4,7 @@
         reveals.forEach((reveal) => {
             const windowHeight = window.innerHeight;
             const elementTop = reveal.getBoundingClientRect().top;
-            const revealPoint = 75;
+            const revealPoint = 110;
             if (elementTop < windowHeight - revealPoint) {
                 reveal.classList.add('active');
             } else {
@@ -18,7 +18,7 @@
     
     const themeSelect = document.getElementById('theme-select');
     themeSelect.addEventListener('change', function() {
-    document.body.classList.remove('dark-theme', 'light-theme', 'barbie-theme', 'blue-theme', 'green-theme', 'purple-theme');
+    document.body.classList.remove('dark-theme', 'light-theme', 'pink-theme', 'blue-theme', 'green-theme', 'purple-theme');
     document.body.classList.add(this.value + '-theme');
     localStorage.setItem('theme', this.value);
 });

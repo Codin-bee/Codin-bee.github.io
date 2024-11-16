@@ -118,7 +118,7 @@ nav ul li a:hover {
 
 body * {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(25px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
@@ -180,7 +180,7 @@ body .active {
     padding: 15px;
     width: 100%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 18px;
     transition: background-color 0.3s ease;
@@ -218,7 +218,7 @@ body .active {
     --text_color: rgb(0, 0, 0);
     --navigation_color: rgb(66, 66, 66);
 }
-.barbie-theme {
+.pink-theme {
     --main_color: rgb(255, 255, 255);
     --secondary_color: rgb(255, 255, 255);
     --text_color: rgb(255, 106, 196);
