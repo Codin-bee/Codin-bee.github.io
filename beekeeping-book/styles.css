@@ -39,13 +39,19 @@ h3 {
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+h5 {
+    font-size: 25px;
     margin: 10px 0;
 }
 
 p {
     font-size: 20px;
     margin: 0 250px;
+    margin-bottom: 50;
 }
 
 a.navigation {
@@ -61,12 +67,15 @@ a.navigation {
     color: var(--navigation_color);
 }
 
-@keyframes bubble {
-    0% { transform: scale(1); }
-    33% { transform: scale(1.15); }
-    66% { transform: scale(1.3); }
-    100% { transform: scale(1.2); }
+section.book-chapter {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
+
+p.book-p {
+    margin-top: 20px;
+}
+
 
 nav {
     margin: 20px 0;
