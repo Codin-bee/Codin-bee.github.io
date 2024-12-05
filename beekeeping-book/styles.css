@@ -48,45 +48,6 @@ p {
     margin: 0 250px;
 }
 
-a.project-btn {
-    background-color: var(--secondary_color);
-    color: var(--text_color);
-    border: 1px outset buttonborder;
-    border-radius: 8px;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-a.project-btn:hover {
-    color: var(--secondary_color);
-    background-color: var(--text_color);
-    animation: bubble 0.5s ease-out forwards;
-}
-
-#beekeeping-book-link {
-    background-color: var(--secondary_color);
-    color: var(--text_color);
-    border: 1px outset buttonborder;
-    border-radius: 8px;
-    padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-
-#beekeeping-book-link:hover {
-    color: var(--secondary_color);
-    background-color: var(--text_color);
-    animation: bubble 0.5s ease-out forwards;
-}
-
-li.contact {
-    font-size: 20px;
-    margin: 0 250px;
-}
-
 a.navigation {
     color: var(--navigation_color);
 }
@@ -98,10 +59,6 @@ a.navigation {
 
 #theme-select-label {
     color: var(--navigation_color);
-}
-
-#contacts {
-    margin-bottom: 100px;
 }
 
 @keyframes bubble {
@@ -183,40 +140,8 @@ body .active {
     h3 {
         font-size: 25px;
     }
-
-    a.project-btn {
-        padding: 8px 16px;
-    }
 }
 
-/* Certificates */
-.certificate-title {
-    background-color: var(--secondary_color);
-    color: var(--text_color);
-    cursor: pointer;
-    padding: 15px;
-    width: 100%;
-    border: none;
-    text-align: center;
-    outline: none;
-    font-size: 18px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 5px;
-}
-.certificate-title:hover {
-    background-color: var(--text_color);
-    color: var(--secondary_color);
-}
-.certificate-description {
-    padding: 0 15px;
-    display: none;
-    background-color: var(--main_color);
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-.certificate-description.expanded {
-    display: block;
-}
 
 /* Theme switching */
 .theme-switcher {
