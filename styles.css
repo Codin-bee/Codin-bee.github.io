@@ -65,7 +65,7 @@ a.project-btn:hover {
     animation: bubble 0.5s ease-out forwards;
 }
 
-#beekeeping-book-link {
+#beekeeping-page-link {
     background-color: var(--secondary_color);
     color: var(--text_color);
     border: 1px outset buttonborder;
@@ -76,7 +76,7 @@ a.project-btn:hover {
     margin-top: 20px;
 }
 
-#beekeeping-book-link:hover {
+#beekeeping-page-link:hover {
     color: var(--secondary_color);
     background-color: var(--text_color);
     animation: bubble 0.5s ease-out forwards;
