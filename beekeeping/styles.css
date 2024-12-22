@@ -68,7 +68,7 @@ a.category:hover {
 }
 
 @keyframes bubble {
-    0% { transform: scale(1); }
+    0% { transform: scale(0.9); }
     33% { transform: scale(1.05); }
     66% { transform: scale(1.09); }
     100% { transform: scale(1.07); }
@@ -95,23 +95,32 @@ body .active {
 
 @media (max-width: 768px) {
     p {
-        margin: 0 50px;
-    }
-
-    h1 {
-        font-size: 70px;
-    }
-}
-
-@media (max-width: 480px) {
-    p {
         margin: 0 20px;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 60px;
     }
 }
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    p {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    a.category {
+        margin: 10px 5px;
+    }
+}
+
 
 /* Theme Styles */
 .dark-theme {
