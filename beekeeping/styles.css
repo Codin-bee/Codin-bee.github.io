@@ -1,0 +1,157 @@
+:root {
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+body {
+    background-color: var(--main_color);
+    color: var(--text_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+header {
+    margin: 70px 0 50px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 0 250px 50px;
+}
+
+#theme-select {
+    background-color: var(--main_color);
+    color: var(--navigation_color);
+}
+
+#theme-select-label {
+    color: var(--navigation_color);
+}
+
+#chapter-list {
+    list-style-type: none;
+}
+
+/* Category links */
+a.category {
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    border: 1px outset buttonborder;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.category:hover {
+    color: var(--secondary_color);
+    background-color: var(--text_color);
+    animation: bubble 0.5s ease-out forwards;
+}
+
+@keyframes bubble {
+    0% { transform: scale(1); }
+    33% { transform: scale(1.05); }
+    66% { transform: scale(1.09); }
+    100% { transform: scale(1.07); }
+}
+
+/* Scrolling Animation */
+body * {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body .active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    p {
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        margin: 0 50px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        margin: 0 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+/* Theme Styles */
+.dark-theme {
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+.light-theme {
+    --main_color: rgb(255, 255, 255);
+    --secondary_color: rgb(218, 218, 218);
+    --text_color: rgb(0, 0, 0);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+.pink-theme {
+    --main_color: rgb(255, 255, 255);
+    --secondary_color: rgb(255, 255, 255);
+    --text_color: rgb(255, 106, 196);
+    --navigation_color: rgb(179, 25, 116);
+}
+
+.blue-theme {
+    --main_color: rgb(0, 134, 155);
+    --secondary_color: rgb(0, 146, 168);
+    --text_color: rgb(154, 236, 255);
+    --navigation_color: rgb(0, 75, 105);
+}
+
+.purple-theme {
+    --main_color: rgb(185, 157, 251);
+    --secondary_color: rgb(168, 131, 242);
+    --text_color: rgb(65, 54, 151);
+    --navigation_color: rgb(102, 70, 152);
+}
+
+.green-theme {
+    --main_color: rgba(100, 140, 33, 0.87);
+    --secondary_color: rgba(34, 114, 16, 0.31);
+    --text_color: rgb(20, 75, 22);
+    --navigation_color: rgba(57, 99, 12, 0.79);
+}
