@@ -28,6 +28,8 @@ document.activeElement.blur();
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     themeSelect.value = savedTheme;
-    document.body.classList.add(`${savedTheme}-theme`);
+}else{
+    savedTheme = 'yellow-theme';
 }
+document.body.classList.add(`${savedTheme}-theme`);
 });
