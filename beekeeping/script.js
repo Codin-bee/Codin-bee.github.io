@@ -29,7 +29,7 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     themeSelect.value = savedTheme;
 }else{
-    savedTheme = 'yellow-theme';
+    savedTheme = 'yellow';
 }
 document.body.classList.add(`${savedTheme}-theme`);
 });
