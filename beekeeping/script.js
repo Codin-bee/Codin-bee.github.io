@@ -18,7 +18,7 @@ window.addEventListener('click', revealOnScroll);
 
 const themeSelect = document.getElementById('theme-select');
 themeSelect.addEventListener('change', function() {
-document.body.classList.remove('dark-theme', 'light-theme', 'pink-theme', 'blue-theme', 'green-theme', 'purple-theme');
+document.body.classList.remove('dark-theme', 'light-theme', 'yellow-theme', 'blue-theme', 'green-theme', 'purple-theme');
 document.body.classList.add(this.value + '-theme');
 localStorage.setItem('theme', this.value);
 });
@@ -30,14 +30,4 @@ if (savedTheme) {
     themeSelect.value = savedTheme;
     document.body.classList.add(`${savedTheme}-theme`);
 }
-});
-
-document.querySelectorAll('.certificate-title').forEach(button => {
-button.addEventListener('click', function() {
-    const content = this.nextElementSibling;
-    content.classList.toggle('expanded');
-    if (content.classList.contains('expanded')) {
-        content.scrollIntoView({ behavior: 'smooth' });
-    }
-});
 });
