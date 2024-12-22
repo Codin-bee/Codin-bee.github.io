@@ -23,13 +23,14 @@ document.body.classList.add(this.value + '-theme');
 localStorage.setItem('theme', this.value);
 });
 
-window.addEventListener('DOMContentLoaded', () => {
-document.activeElement.blur();
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme) {
-    themeSelect.value = savedTheme;
-}else{
-    savedTheme = 'yellow';
-}
-document.body.classList.add(`${savedTheme}-theme`);
+indow.addEventListener('DOMContentLoaded', () => {
+    document.activeElement.blur();
+    let savedTheme = localStorage.getItem('theme');
+    if (!savedTheme) {
+        savedTheme = 'yellow-theme';
+        themeSelect.value = 'yellow';
+    } else {
+        themeSelect.value = savedTheme;
+    }
+    document.body.classList.add(`${savedTheme}-theme`);
 });
