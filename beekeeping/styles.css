@@ -1,8 +1,8 @@
 :root {
-    --main_color: rgb(35, 35, 35);
-    --secondary_color: rgb(66, 66, 66);
-    --text_color: rgb(255, 255, 255);
-    --navigation_color: rgb(66, 66, 66);
+    --main_color:0;
+    --secondary_color:0;
+    --text_color: 0;
+    --navigation_color: 0;
 }
 
 body {
