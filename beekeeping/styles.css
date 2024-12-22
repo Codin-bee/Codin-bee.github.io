@@ -128,11 +128,11 @@ body .active {
     --navigation_color: rgb(66, 66, 66);
 }
 
-.pink-theme {
-    --main_color: rgb(255, 255, 255);
-    --secondary_color: rgb(255, 255, 255);
-    --text_color: rgb(255, 106, 196);
-    --navigation_color: rgb(179, 25, 116);
+.yellow-theme {
+    --main_color: rgb(246 217 42);
+    --secondary_color: rgb(255 164 0);
+    --text_color: rgb(255 255 255);
+    --navigation_color: rgb(255 251 186);
 }
 
 .blue-theme {
