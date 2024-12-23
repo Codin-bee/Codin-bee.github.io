@@ -1,3 +1,4 @@
+/* All color used on the website should be defined here */
 :root {
     --main_color: rgb(246 217 42);
     --secondary_color: rgb(255 164 0);
@@ -5,6 +6,8 @@
     --navigation_color: rgb(255 251 186);
 }
 
+
+/* General properties */
 body {
     background-color: var(--main_color);
     color: var(--text_color);
@@ -40,6 +43,8 @@ ul {
     padding: 0;
     margin: 0;
 }
+
+/* Special properties of elements by id */
 
 #theme-select {
     background-color: var(--main_color);
