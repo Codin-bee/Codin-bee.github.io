@@ -35,7 +35,7 @@ h1 {
 
 p {
     font-size: 22px;
-    margin: 0 250px 50px;
+    margin: 0 250px 40px;
 }
 
 ul {
@@ -63,24 +63,30 @@ ul {
     font-family: "Brush Script MT", cursive;
 }
 
-/* Category links */
-a.category {
+footer {
+    margin-top: 30px;
+}
+
+/* Links */
+a.category, #sources-btn {
     background-color: var(--secondary_color);
     color: var(--text_color);
     border: 1px outset buttonborder;
     border-radius: 9px;
     padding: 10px 20px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
 }
 
-a.category:hover {
+a.category:hover, #sources-btn:hover {
     color: var(--secondary_color);
     background-color: var(--text_color);
     animation: bubble 0.5s ease-out forwards;
 }
+
 
 @keyframes bubble {
     0% { transform: scale(0.9); }
