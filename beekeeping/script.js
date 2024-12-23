@@ -23,7 +23,7 @@ document.body.classList.add(this.value + '-theme');
 localStorage.setItem('theme', this.value);
 });
 
-indow.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
     document.activeElement.blur();
     let savedTheme = localStorage.getItem('theme');
     if (!savedTheme) {

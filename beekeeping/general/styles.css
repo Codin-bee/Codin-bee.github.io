@@ -1,6 +1,6 @@
 /* All color used on the website should be defined here */
 :root {
-    --main_color: rgb(246 217 42);
+    --main_color: rgb(228, 205, 0);
     --secondary_color: rgb(255 164 0);
     --text_color: rgb(255 255 255);
     --navigation_color: rgb(255 251 186);
@@ -59,8 +59,10 @@ ul {
     list-style-type: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 #page-title {
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Great Vibes', cursive;
 }
 
 /* Links */
@@ -154,7 +156,7 @@ body .active {
 }
 
 .yellow-theme {
-    --main_color: rgb(246 217 42);
+    --main_color: rgb(228, 205, 0);
     --secondary_color: rgb(255 164 0);
     --text_color: rgb(255 255 255);
     --navigation_color: rgb(255 251 186);
