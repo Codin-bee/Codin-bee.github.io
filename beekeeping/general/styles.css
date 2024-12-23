@@ -59,12 +59,6 @@ ul {
     list-style-type: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-#page-title {
-    font-family: 'Great Vibes', Arial, sans-serif;
-}
-
 /* Links */
 a.category, #sources-btn {
     background-color: var(--secondary_color);
