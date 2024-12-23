@@ -17,6 +17,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     text-align: center;
+    text-rendering: optimizeLegibility;
 }
 
 header {
@@ -62,7 +63,7 @@ ul {
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 #page-title {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Great Vibes', Arial, sans-serif;
 }
 
 footer {
