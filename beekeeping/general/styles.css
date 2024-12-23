@@ -86,6 +86,11 @@ a.category:hover, #sources-btn:hover {
     100% { transform: scale(1.07); }
 }
 
+/* Navigation links */
+a.navigation {
+    color: var(--navigation_color);
+}
+
 /* Scrolling Animation */
 body * {
     opacity: 0;
