@@ -59,6 +59,15 @@ ul {
     list-style-type: none;
 }
 
+#navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
 /* Links */
 a.category, #sources-btn {
     background-color: var(--secondary_color);
