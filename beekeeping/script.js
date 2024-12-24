@@ -20,12 +20,12 @@ const themeSelect = document.getElementById('theme-select');
 themeSelect.addEventListener('change', function() {
 document.body.classList.remove('dark-theme', 'light-theme', 'yellow-theme', 'blue-theme', 'green-theme', 'purple-theme');
 document.body.classList.add(this.value + '-theme');
-localStorage.setItem('theme', this.value);
+localStorage.setItem('beekeeping-theme', this.value);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
     document.activeElement.blur();
-    let savedTheme = localStorage.getItem('theme');
+    let savedTheme = localStorage.getItem('beekeeping-theme');
     if (!savedTheme) {
         savedTheme = 'yellow-theme';
         themeSelect.value = 'yellow';
