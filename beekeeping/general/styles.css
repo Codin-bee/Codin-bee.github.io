@@ -25,13 +25,21 @@ header {
 }
 
 footer {
-    margin-top: 40;
+    margin-top: 40px;
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 94px;
     margin: 0;
     margin-top: 35px;
+}
+
+h2 {
+    font-size: 58px;
+}
+
+h3 {
+    font-size: 36px;
 }
 
 p {
