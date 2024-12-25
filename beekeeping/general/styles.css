@@ -47,6 +47,10 @@ p {
     margin: 0 250px 50px;
 }
 
+a {
+    font-size: 22px;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -136,6 +140,14 @@ body .active {
     h1 {
         font-size: 60px;
     }
+
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -145,10 +157,19 @@ body .active {
 
     p {
         margin: 0 10px;
+        font-size: 12px;
     }
 
     h1 {
         font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+    
+    h3 {
+        font-size: 15px;
     }
 
     a.category {
