@@ -41,6 +41,8 @@ p {
 
 a {
     font-size: 22px;
+    color: var(--text_color);
+    text-decoration-line: none;
 }
 
 ul {
