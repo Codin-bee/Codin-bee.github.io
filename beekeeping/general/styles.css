@@ -87,7 +87,7 @@ ul {
 }
 
 /* Links */
-a.category, #sources-btn {
+a.category, #sources-btn , a.download-btn {
     background-color: var(--secondary_color);
     color: var(--text_color);
     border: 1px outset buttonborder;
@@ -100,7 +100,7 @@ a.category, #sources-btn {
     transition: background-color 0.3s, color 0.3s;
 }
 
-a.category:hover, #sources-btn:hover {
+a.category:hover, #sources-btn:hover, a.download-btn:hover {
     color: var(--secondary_color);
     background-color: var(--text_color);
     animation: bubble 0.5s ease-out forwards;
