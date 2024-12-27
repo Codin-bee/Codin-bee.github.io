@@ -1,3 +1,12 @@
+/* All color used on the website should be defined here */
+:root {
+    --main_color: rgb(228, 205, 0);
+    --secondary_color: rgb(255 164 0);
+    --text_color: rgb(255 255 255);
+    --navigation_color: rgb(255 251 186);
+}
+
+
 /* General properties */
 body {
     background-color: var(--main_color);
@@ -8,6 +17,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     text-align: center;
+    text-rendering: optimizeLegibility;
 }
 
 header {
@@ -28,6 +38,7 @@ h1 {
 
 h2 {
     font-size: clamp(28px, 4vw, 52px);
+    margin-top: 160px;
 }
 
 h3 {
@@ -83,6 +94,7 @@ a.category, #sources-btn {
     border-radius: 9px;
     padding: 10px 20px;
     text-decoration: none;
+    margin-bottom: 5px;
     margin-top: 20px;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
@@ -155,10 +167,10 @@ body .active {
 }
 
 .yellow-theme {
-    --main_color: rgb(228, 205, 0);
-    --secondary_color: rgb(255 164 0);
+    --main_color: rgb(255 165 33);
+    --secondary_color: rgb(255 201 74);
     --text_color: rgb(255 255 255);
-    --navigation_color: rgb(255 251 186);
+    --navigation_color: rgb(255 251 179);
 }
 
 .blue-theme {
