@@ -1,0 +1,33 @@
+{
+    "en": {
+      "main-title": "Free gallery for beekeepers",
+      "page-description": "Gallery of bees, plants, and beekeeping tools. This project aims to provide free materials for all beekeepers world-wide and therfore to help with their work. So whether you are writing a book, hosting a competition, preparing lecture or you just want to teach new beekeepers in your local beekeeping club, this site is made for you! So feel free to download any content from this site and use it. Download by clicking chosen picture.",
+      "theme-select-label": "Choose theme",
+      "lang-select-label": "Choose language",
+      "theme-1": "Yellow",
+      "theme-2": "Dark",
+      "theme-3": "Light",
+      "theme-4": "Blue",
+      "theme-5": "Purple",
+      "theme-6": "Green",
+
+      "plants-title": "Important plants",
+      "plant-1": "Common snowdrop"
+    },
+    "cs": {
+      "main-title": "Galerie pro včelaře",
+      "page-description": "Sbírka včelka obrázků.",
+      "theme-select-label": "Zvolte motiv",
+      "lang-select-label": "Zvolte jazyk",
+      "theme-1": "Žlutý",
+      "theme-2": "Tmavý",
+      "theme-3": "Světlý",
+      "theme-4": "Modrý",
+      "theme-5": "Fialový",
+      "theme-6": "Zelený",
+
+      "plants-title": "Včelařsky významné rostliny",
+      "plant-1": "Sněženka podsněžník"
+    }
+  }
+  

@@ -1,0 +1,394 @@
+:root {
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+body {
+    background-color: var(--main_color);
+    color: var(--text_color);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 62px;
+    margin: 20px 0 20px;
+}
+
+h3 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+#beekeeping-page-link {
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    border: 1px outset buttonborder;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#beekeeping-page-link:hover {
+    color: var(--secondary_color);
+    background-color: var(--text_color);
+    animation: bubble 0.5s ease-out forwards;
+}
+
+li.contact {
+    font-size: 20px;
+    margin: 0 250px;
+}
+
+a.navigation {
+    color: var(--navigation_color);
+}
+
+#theme-select {
+    background-color: var(--main_color);
+    color: var(--navigation_color);
+}
+
+#theme-select-label {
+    color: var(--navigation_color);
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}/* All color used on the website should be defined here */
+:root {
+    --main_color: rgb(228, 205, 0);
+    --secondary_color: rgb(255 164 0);
+    --text_color: rgb(255 255 255);
+    --navigation_color: rgb(255 251 186);
+}
+
+
+/* General properties */
+body {
+    background-color: var(--main_color);
+    color: var(--text_color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+header {
+    margin: 70px 0 50px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/* Fonts With Responsive Sizes */
+h1 {
+    font-size: clamp(40px, 5vw, 94px);
+    margin: 0;
+    margin-top: 35px;
+}
+
+h2 {
+    font-size: clamp(28px, 4vw, 52px);
+    margin-top: 160px;
+}
+
+h3 {
+    font-size: clamp(24px, 2.8vw, 36px);
+}
+
+p {
+    font-size: 22px;
+    margin: 0 10%;
+}
+
+a {
+    font-size: 22px;
+    color: var(--text_color);
+    text-decoration-line: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Special properties of elements by id */
+
+#theme-select {
+    background-color: var(--main_color);
+    color: var(--navigation_color);
+}
+
+#theme-select-label {
+    color: var(--navigation_color);
+}
+
+#chapter-list {
+    list-style-type: none;
+}
+
+#navigation-links {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+/* Links */
+a.category, #sources-btn , a.download-btn {
+    background-color: var(--secondary_color);
+    color: var(--text_color);
+    border: 1px outset buttonborder;
+    border-radius: 9px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a.category:hover, #sources-btn:hover, a.download-btn:hover {
+    color: var(--secondary_color);
+    background-color: var(--text_color);
+    animation: bubble 0.5s ease-out forwards;
+}
+
+@keyframes bubble {
+    0% { transform: scale(0.9); }
+    33% { transform: scale(1.05); }
+    66% { transform: scale(1.09); }
+    100% { transform: scale(1.07); }
+}
+
+/* Navigation links */
+a.navigation {
+    color: var(--navigation_color);
+}
+
+/* Scrolling Animation */
+body * {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body .active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    p {
+        margin: 0 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    p {
+        margin: 0 5%;
+    }
+
+    a.category {
+        margin: 10px 5px;
+    }
+}
+
+/* Theme Styles */
+.dark-theme {
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+.light-theme {
+    --main_color: rgb(255, 255, 255);
+    --secondary_color: rgb(218, 218, 218);
+    --text_color: rgb(0, 0, 0);
+    --navigation_color: rgb(66, 66, 66);
+}
+
+.yellow-theme {
+    --main_color: rgb(255 165 33);
+    --secondary_color: rgb(255 201 74);
+    --text_color: rgb(255 255 255);
+    --navigation_color: rgb(255 251 179);
+}
+
+.blue-theme {
+    --main_color: rgb(0, 134, 155);
+    --secondary_color: rgb(0, 146, 168);
+    --text_color: rgb(154, 236, 255);
+    --navigation_color: rgb(0, 75, 105);
+}
+
+.purple-theme {
+    --main_color: rgb(185, 157, 251);
+    --secondary_color: rgb(168, 131, 242);
+    --text_color: rgb(65, 54, 151);
+    --navigation_color: rgb(102, 70, 152);
+}
+
+.green-theme {
+    --main_color: rgba(100, 140, 33, 0.87);
+    --secondary_color: rgba(34, 114, 16, 0.31);
+    --text_color: rgb(20, 75, 22);
+    --navigation_color: rgba(57, 99, 12, 0.79);
+}
+
+body * {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body .active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* UI Responsiveness */
+@media (max-width: 1200px) {
+    p {
+        margin: 0 100px;
+    }
+}
+@media (max-width: 768px) {
+    p {
+        margin: 0 50px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    p {
+        margin: 0 20px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+}
+
+/* Theme switching */
+.theme-switcher {
+    display: inline-block;
+    margin-left: 20px;
+}
+.dark-theme {
+    --main_color: rgb(35, 35, 35);
+    --secondary_color: rgb(66, 66, 66);
+    --text_color: rgb(255, 255, 255);
+    --navigation_color: rgb(66, 66, 66);
+}
+.light-theme {
+    --main_color: rgb(255, 255, 255);
+    --secondary_color: rgb(218, 218, 218);
+    --text_color: rgb(0, 0, 0);
+    --navigation_color: rgb(66, 66, 66);
+}
+.pink-theme {
+    --main_color: rgb(255, 255, 255);
+    --secondary_color: rgb(255, 255, 255);
+    --text_color: rgb(255, 106, 196);
+    --navigation_color: rgb(179, 25, 116);
+}
+.blue-theme {
+    --main_color: rgb(0, 134, 155);
+    --secondary_color: rgb(0, 146, 168);
+    --text_color: rgb(154, 236, 255);
+    --navigation_color: rgb(0, 75, 105);
+}
+.purple-theme {
+    --main_color: rgb(185 157 251);
+    --secondary_color: rgb(168 131 242);
+    --text_color: rgb(65 54 151);
+    --navigation_color: rgb(102 70 152);
+}
+.green-theme {
+    --main_color: rgb(100 140 33 / 87%);
+    --secondary_color: rgb(34 114 16 / 31%);
+    --text_color: rgb(20 75 22);
+    --navigation_color: rgb(57 99 12 / 79%);
+}
