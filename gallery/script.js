@@ -54,7 +54,7 @@ function initSwitchers() {
 
 /**
  * Applies the specified theme to the document body.
- * @param {string} theme - The theme to apply (e.g., "yellow").
+ * @param {string} theme - The theme to apply 
  */
 function applyTheme(theme) {
     document.body.classList.remove('dark-theme', 'light-theme', 'yellow-theme', 'blue-theme', 'green-theme', 'purple-theme');
@@ -110,9 +110,6 @@ function changeLanguage(lang) {
     loadLanguage(lang);
     history.pushState(null, '', '?lang=' + lang);
 }
-
-
-
 
 function updateContent(translations) {
     document.querySelectorAll('[id]').forEach(element => {
