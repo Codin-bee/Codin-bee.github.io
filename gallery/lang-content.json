@@ -16,8 +16,13 @@
       "plant-1": "Common snowdrop",
 
       "tools-title": "Beekeeping tools",
-      "tool-1": "Hatching cage (ZANDER)"
+      "tool-1": "Hatching cage (ZANDER)",
+      "tool-2": "Shiping and introduction cage",
+      "tool-3": "Cage for queen marking",
+      "tool-4": "Opalite plates for queen bee"
     },
+
+
     "cs": {
       "title": "Galerie pro včelaře",
       "main-title": "Galerie pro včelaře",
@@ -35,7 +40,9 @@
       "plant-1": "Sněženka podsněžník",
 
       "tools-title": "Včelařské nástroje",
-      "tool-1": "Školkovací klícka (ZANDER)"
+      "tool-1": "Školkovací klícka (ZANDER)",
+      "tool-2": "Zasílací a přidávací klícka",
+      "tool-3": "Síťka znamenací",
+      "tool-4": "Opalitové značky ke značení matek"
     }
   }
-  
